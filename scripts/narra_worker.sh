@@ -6,7 +6,7 @@
 # If you omit that part, the command will be run as root.
 
 # Read more here: https://github.com/phusion/baseimage-docker#adding-additional-daemons
-cd /home/app/source/narra
+cd /home/app/source/platform
 
 if [ $DEBUG == "true" ]; then
     exec /sbin/setuser app /usr/bin/bundle exec rdebug-ide --host 0.0.0.0 --port 1235 --dispatcher-port 26163 -- /usr/local/rvm/gems/default/bin/sidekiq
