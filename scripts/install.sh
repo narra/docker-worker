@@ -5,6 +5,9 @@ set -x
 # Update ubuntu
 /narra_build/scripts/ubuntu.sh
 
+# Prepare ruby and update bundler
+rvm-exec default gem install bundler
+
 # NARRA initialization
 /narra_build/scripts/narra_init.sh
 
